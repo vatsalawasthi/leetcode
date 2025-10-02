@@ -9,7 +9,6 @@ class Solution {
             }
             maxWealth = Math.max(maxWealth, sum);
         }
-        
         return maxWealth;
     }
 }
