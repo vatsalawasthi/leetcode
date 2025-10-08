@@ -6,7 +6,7 @@ class Solution {
             int left = 0, right = n - 1;
             
             while (left <= right) {
-                int temp = image[i][left] ^ 1; 
+                int temp = image[i][left] ^ 1; //^1 is used to change 0 to 1 and 1 to 0 
                 image[i][left] = image[i][right] ^ 1;
                 image[i][right] = temp;
                 
