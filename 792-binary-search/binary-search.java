@@ -11,9 +11,9 @@ class Solution {
             if(nums[mid]==target){
                return mid;
             }else if(nums[mid]<target){
-                return search(nums, target, mid+1, end);
+                return search(nums, target, mid + 1, nums.length - 1);
             }else{
-                 return search(nums, target, start, mid-1);
+                return search(nums, target, start, mid-1);
             }
         }
     }
