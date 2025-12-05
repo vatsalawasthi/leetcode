@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public char findTheDifference(String s, String t) {
         int n = s.length();
