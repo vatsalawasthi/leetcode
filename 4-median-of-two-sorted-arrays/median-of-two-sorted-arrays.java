@@ -21,12 +21,10 @@ class Solution {
             count++;
         }
 
-        // if total is odd → return middle element
         if (total % 2 == 1) {
             return curr;
         }
 
-        // if total is even → average of two middle elements
         return (prev + curr) / 2.0;
     }
 }
