@@ -5,7 +5,6 @@ class Solution {
         for (char c : text.toCharArray()) {
             freq[c - 'a']++;
         }
-
         return Math.min(
                 Math.min(freq['b' - 'a'], freq['a' - 'a']),
                 Math.min(
