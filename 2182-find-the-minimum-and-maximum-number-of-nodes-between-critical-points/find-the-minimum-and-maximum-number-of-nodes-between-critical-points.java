@@ -16,25 +16,24 @@ class Solution {
         int prev = -1;
         int minDist = Integer.MAX_VALUE;
 
-        ListNode prevNode = head;
+        ListNode prevNode = head; 
         ListNode curr = head.next;
 
         while (curr != null && curr.next != null) {
             index++;
 
-            int a = prevNode.val;
+            int a = prevNode.val; 
             int b = curr.val;
             int c = curr.next.val;
 
             if ((b > a && b > c) || (b < a && b < c)) {
-                if (first == -1) {
+                if (first == -1){
                     first = index;
                 } else {
                     minDist = Math.min(minDist, index - prev);
                 }
                 prev = index;
             }
-
             prevNode = curr;
             curr = curr.next;
         }
