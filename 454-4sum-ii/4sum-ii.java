@@ -12,11 +12,10 @@ class Solution {
         for(int i = 0; i<nums3.length; i++){
             for(int j = 0; j<nums4.length; j++){
                 int sum = nums3[i] + nums4[j];
-                if(map.containsKey(-sum)){
-                    count += map.get(-sum);
+                int need = -sum;
+                count += map.getOrDefault(need, 0);
                 }
             }
-        }
         return count;
     }
 }
